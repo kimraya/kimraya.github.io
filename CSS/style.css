@@ -4,3 +4,41 @@
     padding: 0;
     margin: 0;
 }
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+} 
+
+/* Navbar */
+.navbar{
+    color: #000000;
+    height: 70px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: #000000;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px #000000 solid;
+}
+
+/* mobile devices */
+@media(max-width: 500px){
+    .navbar{
+        height: 110px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding:10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+}
