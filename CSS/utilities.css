@@ -1,0 +1,13 @@
+/* Utilities */
+.container{
+    max-width: 1100px;
+    margin: 0 auto; /* to center things */
+    overflow: auto; /* Fix the navbar margin: the cause is h1, h2 margin */
+    padding: 0 40px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
