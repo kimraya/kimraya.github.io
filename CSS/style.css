@@ -65,6 +65,7 @@ a {
 }
 .footer .social a{  
     margin: 0 10px; /* margin left and right */
+    color: #ffff;
 }
 
 /* mobile devices */
