@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+img{
+    width: 100%;
+}
+
 /* Navbar */
 .navbar {
     color: #000000;
@@ -44,27 +48,37 @@ a {
 /* ABOUT ME */
 .about-me img {
     width: 100%;
-    border: #000000 solid 3px;   
+    border: #000000 solid 3px;
 }
-.about-me .grid h3{
+
+.about-me .grid h3 {
     font-weight: 400;
 }
-.about-me .grid h1{
+
+.about-me .grid h1 {
     font-weight: 800;
     font-size: 35px;
 }
-.about-me .grid >*:last-child{
+
+.about-me .grid>*:last-child {
     margin-top: 95px;
+}
+
+/* Personal Projects */
+.recent-works .grid {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
 /* Footer */
-.footer{
+.footer {
     background-color: #000000;
     color: white;
 }
-.footer .social a{  
-    margin: 0 10px; /* margin left and right */
+
+.footer .social a {
+    margin: 0 10px;
+    /* margin left and right */
     color: #ffff;
 }
 
@@ -85,10 +99,17 @@ a {
 }
 
 /* tablet and under devices */
-@media(max-width: 768px ){
+@media(max-width: 768px) {
+
     .grid,
-    .about-me .grid{
+    .about-me .grid,
+    .recent-works .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+    .recent-works .card{
+        height: 100%;
+        width: 400px;
+        margin: 0 auto;
     }
 }
