@@ -76,13 +76,22 @@ img{
     transform: translateY(-15px);
 }
 
+/* Divider */
+.divider{
+    width: 80%;
+    background-color: #ccc;
+    height: 1px;
+    margin: 40px auto; /* pushes it to the middle */
+}
+
 
 /* Footer */
 .footer {
-    background-color: #000000;
     color: white;
 }
-
+.footer .container{
+    background-color: #000000;
+}
 .footer .social a {
     margin: 0 10px;
     /* margin left and right */
