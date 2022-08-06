@@ -128,4 +128,7 @@ img{
         width: 400px;
         margin: 0 auto;
     }
+    .recent-works{
+        padding: 2rem;
+    }
 }
