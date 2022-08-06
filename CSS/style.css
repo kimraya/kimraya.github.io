@@ -49,6 +49,7 @@ img{
 .about-me img {
     width: 100%;
     border: #000000 solid 3px;
+    border-radius: 50%;
 }
 
 .about-me .grid h3 {
@@ -67,6 +68,12 @@ img{
 /* Personal Projects */
 .recent-works .grid {
     grid-template-columns: 1fr 1fr 1fr;
+}
+.recent-works .card{
+    transition: transform 0.2s ease-in;
+}
+.recent-works .card:hover{
+    transform: translateY(-15px);
 }
 
 
