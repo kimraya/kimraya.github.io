@@ -12,6 +12,12 @@
     align-items: center;
     height: 100%;
 }
+.flex-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;  
+}
 
 .grid{
     display: grid;
