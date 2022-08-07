@@ -125,7 +125,7 @@ img{
     }
     .recent-works .card{
         height: 100%;
-        width: 400px;
+        width: 100%;
         margin: 0 auto;
     }
     .recent-works{
