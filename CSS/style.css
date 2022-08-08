@@ -115,6 +115,9 @@ img{
     align-items: center;
     height: 100%; 
 }
+.about-skills a:hover{
+    border-bottom: 2px #000000 solid;
+}
 /* Personal Projects */
 .recent-works .grid {
     grid-template-columns: 1fr 1fr 1fr;
