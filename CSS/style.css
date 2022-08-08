@@ -179,9 +179,10 @@ img{
         grid-template-rows: 1fr;
     }
     .about-skills .grid-tech{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 0px;
+        align-items: center;
+        justify-content: center;
     }
     .recent-works .card{
         height: 100%;
