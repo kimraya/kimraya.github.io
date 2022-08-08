@@ -181,6 +181,7 @@ img{
     .about-skills .grid-tech{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
     }
     .recent-works .card{
         height: 100%;
