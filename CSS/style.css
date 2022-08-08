@@ -170,9 +170,14 @@ img{
 
     .grid,
     .about-me .grid,
-    .recent-works .grid {
+    .recent-works .grid,
+    .about-skills .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+    .about-skills .grid-tech{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
     .recent-works .card{
         height: 100%;
