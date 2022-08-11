@@ -20,7 +20,7 @@
 }
 .flex-tech{
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
     height: 50px;
     gap: 10px;
@@ -61,6 +61,7 @@ button{
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 100%;
+    cursor: pointer;
 }
 button:active {
     box-shadow: 0px 0px 0px 0px;
