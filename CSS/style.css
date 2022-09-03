@@ -126,7 +126,7 @@ img{
 }
 .recent-works .card{
     transition: transform 0.2s ease-in;
-    width: 100%;
+    width: 280px;
     height: 280px;
 }
 .recent-works .card img{
