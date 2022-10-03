@@ -116,6 +116,7 @@ img {
     text-align: center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    place-self: center;
 }
 
 .about-skills .grid-tech {
@@ -137,6 +138,8 @@ img {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .card-recent-proj {
@@ -148,12 +151,15 @@ img {
     box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
     border-radius: 26px 0 26px 0;
     transition: all 1s ease-in-out;
+    place-self: center;
 }
-.recent-projects h1{
+
+.recent-projects h1 {
     font-weight: 900;
     font-size: 75px;
     text-align: center;
 }
+
 .title-recent-proj {
     display: flex;
     justify-content: center;
@@ -162,7 +168,8 @@ img {
     background-color: #ffffff;
     transition: all 1s ease-in-out;
 }
-.title-recent-proj h4{
+
+.title-recent-proj h4 {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -186,7 +193,7 @@ img {
     color: #000000;
 }
 
-.description-recent-proj p{
+.description-recent-proj p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -205,7 +212,7 @@ img {
     left: 0;
     width: 0;
     height: 0;
-    border-top: 100px solid #000000 ;
+    border-top: 100px solid #000000;
     /* #189AB4 */
     border-right: 100px solid transparent;
 }
@@ -234,13 +241,13 @@ img {
     left: 8px;
 }
 
-.card-recent-proj:hover{
+.card-recent-proj:hover {
     box-shadow: 0 0 10px 1px #000000;
     /* #5ad0e8 */
 }
 
 .card-recent-proj:hover .title-recent-proj,
-.card-recent-proj:hover .description-recent-proj{
+.card-recent-proj:hover .description-recent-proj {
     height: 50%;
 }
 
@@ -293,7 +300,8 @@ img {
     .grid,
     .about-me .grid,
     .recent-works .grid,
-    .about-skills .grid {
+    .about-skills .grid,
+    .flex-card-project {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -313,6 +321,11 @@ img {
 
     .recent-works {
         padding: 2rem;
+    }
+
+    .flex-card-project {
+        align-content: center;
+        justify-content: space-between;
     }
 
     button {
