@@ -47,7 +47,7 @@ img {
 }
 
 /* ABOUT ME */
-.about-me {
+.about-me .container{
     background-color: #f1f1f1;
 }
 
@@ -63,7 +63,7 @@ img {
 
 .about-me .grid h1 {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .about-me .grid>*:last-child {
@@ -158,7 +158,7 @@ img {
 
 .recent-projects h1 {
     font-weight: 900;
-    font-size: 75px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -259,7 +259,7 @@ img {
     width: 80%;
     background-color: #ccc;
     height: 1px;
-    margin: 40px auto;
+    margin: 30px auto;
     /* pushes it to the middle */
 }
 
