@@ -22,7 +22,7 @@ a {
     color: #000000;
 }
 
-img{
+img {
     width: 100%;
 }
 
@@ -47,9 +47,10 @@ img{
 }
 
 /* ABOUT ME */
-.about-me{
+.about-me {
     background-color: #f1f1f1;
 }
+
 .about-me img {
     width: 100%;
     border: #000000 solid 3px;
@@ -62,7 +63,7 @@ img{
 
 .about-me .grid h1 {
     font-weight: 800;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .about-me .grid>*:last-child {
@@ -70,81 +71,187 @@ img{
 }
 
 /* ABOUT PAGE SECTION */
-.about-page{
+.about-page {
     background-color: #f1f1f1;
 }
-.about-page h1{
+
+.about-page h1 {
     font-weight: 900;
     font-size: 100px;
     margin: 0;
     padding: 0;
 }
-.about-page h2{
-    font-weight:300;
+
+.about-page h2 {
+    font-weight: 300;
     margin-bottom: 50px;
 }
-.about-skills .grid{
-   grid-template-columns:1fr 3fr ;
-   justify-content: start;
-   align-items: flex-start;
-   gap: 0px;
+
+.about-skills .grid {
+    grid-template-columns: 1fr 3fr;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 0px;
 }
-.about-socials-grid .card{
+
+.about-socials-grid .card {
     width: 120px;
     height: 120px;
 }
-.about-skills a{
+
+.about-skills a {
     color: #000000;
     padding: 10px;
     margin: 0 20px;
     font-size: larger;
 }
-.about-skills li{
+
+.about-skills li {
     margin: 20px 0;
 }
-.about-skills .card{
+
+.about-skills .card {
     width: 100px;
     height: 100px;
     text-align: center;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
-.about-skills .grid-tech{
+
+.about-skills .grid-tech {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0px;
     justify-content: center;
     align-items: center;
-    height: 100%; 
-}
-.about-skills a:hover{
-    border-bottom: 2px #000000 solid;
-}
-/* Personal Projects */
-.recent-works .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.recent-works .card{
-    transition: transform 0.2s ease-in;
-    width: 280px;
-    height: 280px;
-}
-.recent-works .card img{
-    width: 100%;
-    height: 120px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.recent-works .card:hover{
-    transform: translateY(-15px);
+    height: 100%;
 }
 
+.about-skills a:hover {
+    border-bottom: 2px #000000 solid;
+}
+
+/*Recent Personal Projects*/
+.flex-card-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-recent-proj {
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    height: 380px;
+    width: 440px;
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 26px 0 26px 0;
+    transition: all 1s ease-in-out;
+}
+.recent-projects h1{
+    font-weight: 900;
+    font-size: 75px;
+    text-align: center;
+}
+.title-recent-proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #000000;
+    transition: all 1s ease-in-out;
+}
+.title-recent-proj h4{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 56px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.description-recent-proj {
+    height: 0;
+    padding: 20px 50px 30px 50px;
+    background-color: #ffffff;
+    transition: all 1s ease-in-out;
+}
+
+.description-recent-proj h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.description-recent-proj p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #606060;
+}
+
+.tech-stack {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #000000 ;
+    /* #189AB4 */
+    border-right: 100px solid transparent;
+}
+
+.rigth-top-corner {
+    left: auto;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.left-bottom-corner {
+    top: auto;
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+.github-icon {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.link-icon {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.card-recent-proj:hover{
+    box-shadow: 0 0 10px 1px #000000;
+    /* #5ad0e8 */
+}
+
+.card-recent-proj:hover .title-recent-proj,
+.card-recent-proj:hover .description-recent-proj{
+    height: 50%;
+}
+
+
 /* Divider */
-.divider{
+.divider {
     width: 80%;
     background-color: #ccc;
     height: 1px;
-    margin: 40px auto; /* pushes it to the middle */
+    margin: 40px auto;
+    /* pushes it to the middle */
 }
 
 
@@ -153,9 +260,11 @@ img{
     color: white;
     margin-top: 100px;
 }
-.footer .container{
+
+.footer .container {
     background-color: #000000;
 }
+
 .footer .social a {
     margin: 0 10px;
     /* margin left and right */
@@ -184,25 +293,29 @@ img{
     .grid,
     .about-me .grid,
     .recent-works .grid,
-    .about-skills .grid{
+    .about-skills .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-    .about-skills .grid-tech{
+
+    .about-skills .grid-tech {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0px;
         align-items: center;
         justify-content: center;
     }
-    .recent-works .card{
+
+    .recent-works .card {
         height: 100%;
         width: 100%;
         margin: 0 auto;
     }
-    .recent-works{
+
+    .recent-works {
         padding: 2rem;
     }
-    button{
+
+    button {
         padding: 0.25em 0.75em;
     }
 }

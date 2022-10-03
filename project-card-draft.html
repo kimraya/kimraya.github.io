@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .container-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #191919;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            height: 380px;
+            width: 440px;
+            box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
+            border-radius: 26px 0 26px 0;
+            transition: all 1s ease-in-out;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(1, 26, 34, 0.89), rgba(1, 26, 34, 0.89)), url("./images/to-do.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: all 1s ease-in-out;
+        }
+
+        .description {
+            height: 0;
+            padding: 20px 50px 30px 50px;
+            background-color: #ffffff;
+            transition: all 1s ease-in-out;
+        }
+
+        .description h5 {
+            font-family: 'Roboto Mono', monospace;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+        }
+
+        .description p {
+            font-family: 'Roboto Mono', monospace;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #606060;
+        }
+
+        .tech-stack {
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+
+        .corner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 100px solid #189AB4;
+            border-right: 100px solid transparent;
+        }
+
+        .rigth-top-corner {
+            left: auto;
+            right: 0;
+            transform: rotate(90deg);
+        }
+
+        .left-bottom-corner {
+            top: auto;
+            bottom: 0;
+            transform: rotate(-90deg);
+        }
+
+        .github-icon {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+        }
+
+        .link-icon {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 10px 1px #5ad0e8;
+        }
+
+        .card:hover .title,
+        .card:hover .description {
+            height: 50%;
+        }
+    </style>
 </head>
+
+
 <body>
-    
+    <div class="container-flex">
+        <div class="card">
+            <div class="title">
+                <!-- <h4>To Do List</h4> -->
+                <img src="img/img-css.png" alt="">
+            </div>
+            <div class="description">
+                <h5>Description:</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis tincidunt tellus arcu massa cursus
+                    pharetra nulla diam.</p>
+                <div class="tech-stack">
+                    <iconify-icon icon="logos:java" width="38" height="38"></iconify-icon>
+                    <iconify-icon icon="vscode-icons:file-type-html" width="38" height="38"></iconify-icon>
+                    <iconify-icon icon="vscode-icons:file-type-css" width="38" height="38"></iconify-icon>
+                    <iconify-icon icon="vscode-icons:file-type-js-official" width="38" height="38"></iconify-icon>
+                </div>
+            </div>
+            <div class="corner rigth-top-corner"></div>
+            <iconify-icon class="github-icon" icon="akar-icons:github-fill" style="color: white;" width="38"
+                height="38"></iconify-icon>
+            <div class="corner left-bottom-corner"></div>
+            <iconify-icon class="link-icon" icon="akar-icons:link-out" style="color: white;" width="38" height="38">
+            </iconify-icon>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <h4>To Do List</h4>
+            </div>
+            <div class="description">
+                <h5>Description:</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis tincidunt tellus arcu massa cursus
+                    pharetra nulla diam.</p>
+                <div class="tech-stack">
+                    <iconify-icon icon="logos:java" width="38" height="38"></iconify-icon>
+                    <iconify-icon icon="vscode-icons:file-type-html" width="38" height="38"></iconify-icon>
+                    <iconify-icon icon="vscode-icons:file-type-css" width="38" height="38"></iconify-icon>
+                    <iconify-icon icon="vscode-icons:file-type-js-official" width="38" height="38"></iconify-icon>
+                </div>
+            </div>
+            <div class="corner rigth-top-corner"></div>
+            <iconify-icon class="github-icon" icon="akar-icons:github-fill" style="color: white;" width="38"
+                height="38"></iconify-icon>
+            <div class="corner left-bottom-corner"></div>
+            <iconify-icon class="link-icon" icon="akar-icons:link-out" style="color: white;" width="38" height="38">
+            </iconify-icon>
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 </body>
+
 </html>
