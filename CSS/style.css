@@ -40,3 +40,31 @@
 .navbar li:hover {
     transform: rotate(360deg);
 }
+
+/* Introduction section */
+.introduction {
+    height: 100vh;
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+}
+.introduction h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #141c3a;
+    line-height: 1.5;
+    /* top and bottom 10px and left and right 0px */
+    margin: 1.5rem 0; 
+}
+.introduction h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #141c3a;
+    line-height: 1.5;
+    margin: 1.5rem 0; 
+}
+.introduction img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
