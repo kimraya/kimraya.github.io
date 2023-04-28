@@ -36,14 +36,16 @@
 }
 .navbar h1:hover {
     transform: scale(1.2);
+    color: #5BE9B9;
 }
 .navbar li:hover {
     transform: rotate(360deg);
+    color: #5BE9B9;
 }
 
 /* Introduction section */
 .introduction {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     padding-top: 2rem;
     text-align: center;
@@ -63,8 +65,31 @@
     line-height: 1.5;
     margin: 1.5rem 0; 
 }
-.introduction img {
+.introduction .intro-body img {
     border-radius: 50%;
     height: 250px;
     width: 250px;
+}
+.introduction .intro-foot img {
+    height: 50%;
+    width: 50%;
+    margin-top: 2.5rem;
+}
+
+/* Introduction-medium section */
+.intro-medium {
+    height: 400px;
+    text-align: center;
+    padding: 0 20rem;
+    background-color: #5BE9B9;
+}
+.intro-medium h1 {
+    padding-top: 5rem;
+    font-weight: 900;
+    color: #141c3a;
+}
+.intro-medium p {
+    line-height: 1.5;
+    color: #141c3a;
+    margin: 1.5rem 3rem; 
 }
