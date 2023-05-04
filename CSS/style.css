@@ -93,3 +93,20 @@
     color: #141c3a;
     margin: 1.5rem 3rem; 
 }
+
+/* Skills-section card */
+.skills {
+    text-align: center;
+    line-height: 1.5;
+}
+.skills .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skills .skills-front-end ul {
+    list-style: none;
+    margin-top: 0;
+    margin-left: 0;
+}
+.skills .skills-front-end { b}
+.skills .skills-back-end {}
+.skills .skills-hardware {}
