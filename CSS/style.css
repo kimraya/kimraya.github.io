@@ -98,15 +98,27 @@
 .skills {
     text-align: center;
     line-height: 1.5;
+    height: 500px;
 }
 .skills .grid{
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
 }
-.skills .skills-front-end ul {
+.skills .skills-column {
+    border: #141c3a solid 0.5px;
+}
+.skills .skills-column ul {
     list-style: none;
     margin-top: 0;
     margin-left: 0;
 }
-.skills .skills-front-end { b}
-.skills .skills-back-end {}
-.skills .skills-hardware {}
+.skills .skills-column h1 {
+    margin: 1.5rem 0px;
+}
+.skills .list-title {
+    color: #5BE9B9;
+    margin-top: 2.5rem;
+}
+.skills .list-title-contents {
+    margin-bottom: 2.5rem;
+}
