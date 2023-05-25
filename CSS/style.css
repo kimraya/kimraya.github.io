@@ -48,7 +48,7 @@ img {
 
 /* Introduction section */
 .introduction {
-    height: 80vh;
+    height: max-content;
     width: 100%;
     padding-top: 2rem;
     text-align: center;
@@ -74,8 +74,8 @@ img {
     width: 250px;
 }
 .introduction .intro-foot img {
-    height: 50%;
     width: 50%;
+    height: 50%;
     margin-top: 2.5rem;
 }
 
@@ -84,6 +84,7 @@ img {
     height: 430px;
     text-align: center;
     /* padding: 0 30rem; */
+    margin-top: -3px;
     background-color: #5BE9B9;
 }
 .intro-medium .flex {
