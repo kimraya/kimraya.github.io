@@ -53,6 +53,19 @@ img {
   color: #5BE9B9;
 }
 
+/* Navbar Mobile Menu */
+.mobile-menu ul {
+  list-style-type: none;
+}
+.mobile-menu li a {
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 0 5px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: black;
+}
 /* Introduction section */
 .introduction {
   height: max-content;
@@ -353,6 +366,14 @@ img {
 }
 
 @media(max-width:768px) {
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
   .introduction .intro-body img {
     width: 250px;
     height: 250px;
